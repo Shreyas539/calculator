@@ -1,0 +1,37 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(225, 122, 194);
+}
+.container{
+    width: 350px;
+    position: relative;
+    align-items: center;
+    left: 37.5%;
+    top: 50%;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    width: 95px;
+    padding-block: 10px;
+    border-radius: 5px;
+}
+
+.row{
+    margin-block: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+}

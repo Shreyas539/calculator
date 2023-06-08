@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- <script src="
+    https://cdn.jsdelivr.net/npm/mathjs@11.8.0/lib/browser/math.min.js
+    "></script> -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 style="text-align: center; margin-block: 20px;">Welcome to my calcuator</h1>
+
+    <div class="container" id="calcu">
+            <!-- <form action="get" class="container" id="calcu"> -->
+                <div class="in flex" style="gap: 10px;">
+                    <input type="text" placeholder="0" style="width: 100%; padding-block: 10px;
+                    border: 1px solid black; border-radius: 5px;" id="result">
+    
+                    <input type="button" class="btn" value="AC" style="background-color: rgb(228, 16, 16); color: white;" onclick="clr()">
+                </div>
+              
+                <div class="row flex">
+                    <input type="button" class="btn" value="1" onclick="dis('1')" onkeydown="myFunction(event)">
+                    <input type="button" class="btn" value="2" onclick="dis('2')" onkeydown="myFunction(event)">
+                    <input type="button" class="btn" value="3" onclick="dis('3')" onkeydown="myFunction(event)">
+                    <input style="background-color: rgb(197, 148, 88);" type="button" class="btn" value="/" onclick="dis('/')" onkeydown="myFunction(event)">
+                </div>
+
+                <div class="row flex">
+                    <input type="button" class="btn" value="4" onclick="dis('4')" onkeydown="myFunction(event)">
+                    <input type="button" class="btn" value="5" onclick="dis('5')" onkeydown="myFunction(event)">
+                    <input type="button" class="btn" value="6" onclick="dis('6')" onkeydown="myFunction(event)">
+                    <input type="button" class="btn" value="*" onclick="dis('*')" style="background-color: rgb(197, 148, 88);" onkeydown="myFunction(event)">
+                </div>
+
+                <div class="row flex">
+                    <input type="button" class="btn" value="7" onclick="dis('7')" onkeydown="myFunction(event)">                    
+                    <input type="button" class="btn" value="8" onclick="dis('8')" onkeydown="myFunction(event)">
+                    <input type="button" class="btn" value="9" onclick="dis('9')" onkeydown="myFunction(event)">
+                    <input type="button" class="btn" value="-" onclick="dis('-')" style="background-color: rgb(197, 148, 88);" onkeydown="myFunction(event)">
+                </div>
+
+                <div class="row flex">
+                    <input type="button" class="btn" value="0" onclick="dis('0')" onkeydown="myFunction(event)">
+                    <input type="button" class="btn" value="." onclick="dis('.')" onkeydown="myFunction(event)" style="background-color: rgb(197, 148, 88);">
+                    <input type="button" class="btn" value="+" onclick="dis('+')" style="background-color: rgb(197, 148, 88);" onkeydown="myFunction(event)">
+                    <input type="button" class="btn" value="=" onclick="solve()" style="background-color: rgb(208, 127, 28);">
+                </div>
+        
+            <!-- </form> -->
+        </div>
+
+
+</body>
+</html>
